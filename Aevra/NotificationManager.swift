@@ -11,6 +11,23 @@ enum NotificationManager {
         }
     }
 
+    static func scheduleImmediateNotification(title: String, body: String) async {
+        let granted = await requestPermission()
+        guard granted else { return }
+
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = .default
+
+        let request = UNNotificationRequest(
+            identifier: UUID().uuidString,
+            content: content,
+            trigger: UNTimeIntervalNotificationTrigger(timeInterval: 0.2, repeats: false)
+        )
+        try? await UNUserNotificationCenter.current().add(request)
+    }
+
     static func scheduleTestNotification() async {
         let granted = await requestPermission()
         guard granted else { return }

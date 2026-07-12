@@ -11,9 +11,12 @@
     <key>CFBundleShortVersionString</key><string>$(MARKETING_VERSION)</string>
     <key>CFBundleVersion</key><string>$(CURRENT_PROJECT_VERSION)</string>
     <key>LSRequiresIPhoneOS</key><true/>
+    <key>NSUserNotificationUsageDescription</key><string>Aevra uses notifications for reminders, focus sessions, and messages from your PC.</string>
+    <key>NSLocalNetworkUsageDescription</key><string>Aevra uses your local network to receive notifications from your Windows PC.</string>
+    <key>NSBluetoothAlwaysUsageDescription</key><string>Aevra uses Bluetooth to receive notifications from your Windows PC when Wi-Fi is unavailable.</string>
+    <key>UIBackgroundModes</key><array><string>bluetooth-peripheral</string></array>
     <key>UILaunchScreen</key><dict/>
     <key>UIRequiredDeviceCapabilities</key><array><string>arm64</string></array>
     <key>UISupportedInterfaceOrientations</key><array><string>UIInterfaceOrientationPortrait</string></array>
-    <key>NSUserNotificationUsageDescription</key><string>Aevra uses notifications for reminders and focus sessions.</string>
 </dict>
 </plist>

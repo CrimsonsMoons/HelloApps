@@ -28,7 +28,11 @@ targets:
         CFBundleDisplayName: Aevra
         UILaunchScreen: {}
         UIUserInterfaceStyle: Dark
-        NSUserNotificationUsageDescription: Aevra uses notifications for reminders and focus sessions.
+        NSUserNotificationUsageDescription: Aevra uses notifications for reminders, focus sessions, and messages from your PC.
+        NSLocalNetworkUsageDescription: Aevra uses your local network to receive notifications from your Windows PC.
+        NSBluetoothAlwaysUsageDescription: Aevra uses Bluetooth to receive notifications from your Windows PC when Wi-Fi is unavailable.
+        UIBackgroundModes:
+          - bluetooth-peripheral
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
         BGTaskSchedulerPermittedIdentifiers: []

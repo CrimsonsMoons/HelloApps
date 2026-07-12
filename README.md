@@ -39,3 +39,13 @@ Choose your development team in Xcode, connect an iPhone, and press Run.
 ## Current scope
 
 This is the first native milestone. Widgets and Live Activities are intentionally left for the next milestone so the base app can compile cleanly first.
+
+## PC → iPhone notifications
+
+This updated starter includes `WindowsSender`, a matching Windows desktop application. In Aevra, open **Live → PC Connect**, reveal the pairing code, and keep Aevra open for the most reliable initial pairing.
+
+The Windows sender tries automatic same-Wi-Fi discovery first and Bluetooth Low Energy second. No manual iPhone IP address is required.
+
+### iOS limitations
+
+Bluetooth background mode is enabled, but iOS controls when background Bluetooth advertising and execution are available. Same-Wi-Fi delivery is most reliable while Aevra is open. Guaranteed delivery after Aevra has been force-closed would require Apple Push Notification service.
